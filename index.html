@@ -4,10 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
     <title>Scissors, Rock, Paper!</title>
 </head>
 <body>
-    <p>*whisper* The game is in the dev console (F12) *whisper*</p>
+    <div class="playArea">
+        
+        <div class="playHeading"><h2>CHOOSE YOUR MOVE:</h2></div>
+        <div class="playButtons">
+            <div id="btnRock" class="button">Rock</div>
+            <div id="btnPaper" class="button">Paper</div>
+            <div id="btnScissors" class="button">Scissors</div>
+        </div>
+        <div class="winArea"></div>
+        <div class="resultsArea">
+            <div class="scores">
+                <div class="scoreTable">
+                    <h3>SCORE</h3>
+                    <div class="scoreRow">
+                        <div>Player:</div>
+                        <div id="playerScore">0</div>
+                    </div>
+                    <div class="scoreRow">
+                        <div>CPU:</div>
+                        <div id="cpuScore">0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="roundResults">
+                <h3>ROUND HISTORY</h2>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="main.js"></script>
 </html>
